@@ -44,3 +44,7 @@ let navLinks = document.querySelectorAll(".menu li a");
 navLinks.forEach((link) => {
   link.addEventListener("click", hideNavMenu);
 });
+
+document.getElementById('goToContact').addEventListener('click', function() {
+document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
