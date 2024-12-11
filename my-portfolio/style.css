@@ -160,8 +160,15 @@ nav.sticky .menu-btn {
 
 .home .text-three {
   font-size: 30px;
+  font-weight: bold;
   margin: 5px 0;
   color: #4070f4;
+}
+
+.home .text-three_1 {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #dd584f;
 }
 
 .home .text-four {
