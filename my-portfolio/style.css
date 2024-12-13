@@ -887,3 +887,139 @@ footer .text span a:hover {
     color: #ffe600
 }
 
+
+/* Education Section Styles */
+.education {
+  /* padding: 80px 50px; */
+  background: #F0F8FF;
+  padding-bottom: 50px
+}
+
+.education .education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.education .education-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.education .education-box:hover {
+  transform: translateY(-5px);
+}
+
+.education .icon {
+  font-size: 36px;
+  color: #007bff;
+  margin-right: 20px;
+}
+
+.education .info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.education .info h3,
+.education .info p {
+  margin: 0;
+}
+
+.education .info .year {
+  align-self: flex-start;    /* Align year to the left */
+  order: -1;                 /* Move the year to the top within the info section */
+  font-size: 14px;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recent-projects {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+}
+
+.recent-projects .content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.recent-projects .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recent-projects p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 60%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+.project-img img {
+  width: 150px;  /* Adjust the width to the desired logo size */
+  height: auto;  /* Keep the aspect ratio */
+  object-fit: contain;  /* Ensures the entire logo fits within the bounds */
+  margin: 0 auto;  /* Center the image horizontally */
+  margin-top: 10px;
+  display: block;  /* Makes the image behave like a block-level element */
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
