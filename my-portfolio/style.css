@@ -815,8 +815,14 @@ footer .text span a:hover {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    margin-top: 10px;
+    margin-top: 2px;
     color: #dd584f
+}
+
+.work .wpo-work-wrap .wpo-work-item ul li.position  h6{
+    display: block;
+    font-weight: bold;
+    color: #8195cb
 }
 
 @media(max-width:991px) {
@@ -824,7 +830,6 @@ footer .text span a:hover {
   .work .wpo-work-wrap .wpo-work-item ul li.position span,
   .work .wpo-work-wrap .wpo-work-item ul li.position span {
         font-size: 14px;
-        margin-top: 5px
     }
 }
 
