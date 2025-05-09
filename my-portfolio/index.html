@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
   <title>Vishnuvardhan Venkannagari Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="email_modal.css" />
   <link rel="icon" type="image/png" href="Images/VSYS-TECH-title-logo.png" />
-  <!-- Fontawesome CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("eFUM9PjzB3FKTHIff");
+    })();
+  </script>
 </head>
 
 <body>
-  <!-- Move to up button -->
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
   </div>
@@ -53,10 +57,13 @@
         <div class="text-two">I'm Vishnuvardhan</div>
         <div class="text-three">Full Stack Developer | AWS Certified Developer - Associate</div>
         <div class="text-three_1">Masters in Data Science from Bradley University</div>
-        <div class="text-four">From Peoria, Illinois, USA</div>
+        <div class="text-four">Chicago, Illinois, USA</div>
       </div>
-      <div class="button" id="goToContact">
+      <!-- <div class="button" id="goToContact">
         <button>Hire Me</button>
+      </div> -->
+      <div class="button">
+        <button id="goToContact">Hire Me</button>
       </div>
     </div>
   </section>
@@ -112,7 +119,7 @@
           <div class="wpo-work-wrap">
                 <div class="wpo-work-item">
                   <ul>
-                      <li class="date">Feb/25 - Present</li>
+                      <li class="date">Feb/25 - May/25</li>
                       <li class="position">Software Engineer
                       <h6>
                         SOTAOG LLC
@@ -161,6 +168,7 @@
   </div>
 
   </section>
+
 <!-- My Eductaion Section Start -->
   <section class="education" id="education">
     <div class="content">
@@ -234,7 +242,8 @@
           </p>
           <p>
             In cloud services, I have worked with AWS (Lambda, S3, ECS, EKS) and Azure Functions 
-            to build scalable applications. I am skilled in databases such as MongoDB, Firebase, 
+            to build scalable applications. I use Terraform as an Infrastructure as Code (IaC) tool to 
+            automate and provision cloud infrastructure efficiently. I am skilled in databases such as MongoDB, Firebase, 
             MySQL, and Elasticsearch, and use Redis for caching and queue management.
           </p>
           <p>
@@ -268,25 +277,33 @@
             <div class="topic">Node JS</div>
             <div class="per">80%</div>
           </div>
+	        <div class="box">
+            <div class="topic">Angular</div>
+            <div class="per">70%</div>
+          </div>
           <div class="box">
             <div class="topic">AWS</div>
-            <div class="per">70%</div>
+            <div class="per">80%</div>
           </div>
           <div class="box">
             <div class="topic">JavScript</div>
             <div class="per">80%</div>
           </div>
-          <div class="box">
+	        <div class="box">
+            <div class="topic">Terrafrom</div>
+	           <div class="per">80%</div>
+          </div>
+          <!-- <div class="box">
             <div class="topic">HTML</div>
-            <div class="per">60%</div>
+	           <div class="per">80%</div>
           </div>
           <div class="box">
             <div class="topic">CSS</div>
-            <div class="per">60%</div>
-          </div>
+	           <div class="per">80%</div>
+          </div> -->
           <div class="box">
             <div class="topic">MS Azure</div>
-            <div class="per">60%</div>
+	         <div class="per">60%</div>
           </div>
         </div>
       </div>
@@ -359,15 +376,28 @@
         <!-- <div class="media-icons"> -->
           <a href="mailto:venkannagarivishnureddy@gmail.com"><i class="fas fa-envelope"></i> venkannagarivishnureddy@gmail.com</a><br>
           <a href="tel:+1(309)-222-0106"><i class="fas fa-phone-alt"></i> +1(309)-222-0106</a><br>
-          <a href="https://www.linkedin.com/in/vishnuvardhan-venkannagari"><i class="fab fa-linkedin-in"></i> LinkedIn</a><br><br>
+          <a href="https://www.linkedin.com/in/vishnuvardhan-venkannagari"><i class="fab fa-linkedin-in"></i> LinkedIn</a><br>
+          <a href="#" id="openModalFromContact"><i class="fas fa-paper-plane"></i> Send a Message</a><br><br>
         <!-- </div> -->
-        
       </div>
     </div>
   </section>
 
-
+  <div id="emailModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Send a Message</h2>
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required><br>
+        <input type="email" name="reply_to" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+      <p id="email-status"></p>
+    </div>
+  </div>
   <script src="script.js"></script>
+  
 </body>
 
 </html>
